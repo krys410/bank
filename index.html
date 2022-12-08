@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Banque</title>
+</head>
+<body>
+    <header>
+        <nav class="navMenu">
+            <a href="#">ACCUEIL</a>
+            <a href="#section2">GESTION DE COMPTE</a>
+          </nav>
+    </header>
+        <!---Premiere section-->
+        <section class="section1">
+            <div>
+                <img class="image" src="images/bank.jpg" alt="image">
+            </div>
+            <div class="txt">
+                <p>BIENVENUE SUR VOTRE BANQUE EN LIGNE</p>
+            </div>
+            <div class="svg-wrapper">
+                <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                  <rect id="shape" height="40" width="150" />
+                  <div id="text">
+                    <a href="#section2"><span class="spot"></span>GÉRER</a>
+                  </div>
+                </svg>
+              </div>
+        </section>
+        <!-- -Deuxieme section -->
+        <section class="section2" id="section2">
+            <div class="container">
+              <div class="content1">
+                <label for="solde">Votre Solde</label>
+                <input type="number" name="solde" id="solde" value="1000" disabled>
+              </div>
+              <div class="content2">
+                <select id="select">
+                  <option value="0">Ajouter fonds</option>
+                  <option value="1">Retirer fond</option>
+                </select> 
+                <input type="number" name="fond" id="fond" min="0">
+                <button id="btn1">Valider</button>
+              </div>
+              <div class="content3">
+                <p>Votre nouveau solde :</p>
+                <p id="soldeFinal"></p>
+              </div>
+              <div class="content4">
+                <div class="histo">
+                  <p>Historique des opérations</p>
+                </div>
+
+                <div id="ope">
+                </div>
+              </div>
+        </div>
+        </section>
+      <footer>
+        <div class="footer">
+          <p>© 2022 Christophe Grondin, Tous droits réservés.</p>
+        </div>
+      </footer>  
+<script src="js/script.js"></script>
+</body>
+</html>
